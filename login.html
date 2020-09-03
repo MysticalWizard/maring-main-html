@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>index</title>
   <link rel="stylesheet" type="text/css" href="login_style.css">
+  <script defer src="login-auth.js"></script>
 
   <link rel="shortcut icon" href="/maring-main-html/favicon/favicon.ico" type="favicon.ico" />
   <link rel="icon" href="/maring-main-html/favicon/favicon.ico" type="favicon.ico" />
@@ -31,18 +32,24 @@
 
 <body>
   <div class="login-box">
-    <h1>Login</h1>
-    <div class="textbox">
-      <i class="fas fa-user"></i>
-      <input type="text" placeholder="Username" name="" value="">
-    </div>
+    <div class="box">
+      <h1>Login</h1>
+      <div id="login-error-msg-holder">
+        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">or password</span></p>
+      </div>
 
-    <div class="textbox">
-      <i class="fas fa-lock"></i>
-      <input type="password" placeholder="Password" name="" value="">
-    </div>
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username" name="" value="">
+      </div>
 
-    <input type="button" class="btn" value="Sign in" name="" value="">
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" name="" value="">
+      </div>
+
+      <input type="button" class="login-submit-button" value="Sign in" name="" value="">
+    </div>
   </div>
 </body>
 
