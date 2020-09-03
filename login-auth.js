@@ -13,10 +13,8 @@ loginButton.addEventListener("click", (e) => {
     loginErrorMsg.style.opacity = 0;
     loginUsernameErrorField.style.borderBottom = "1px solid #4caf50"
     loginPasswordErrorField.style.borderBottom = "1px solid #4caf50"
-    setTimeout(function () {
-      alert("You have successfully logged in.");
-      location.reload();
-    }, 100);
+    alert("You have successfully logged in.");
+    location.reload();
   } if (username !== "admin") {
     loginErrorMsg.style.opacity = 1;
     loginUsernameErrorField.style.borderBottom = "1px solid #fe3030"
