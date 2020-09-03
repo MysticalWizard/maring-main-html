@@ -5,9 +5,9 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index</title>
-  <link rel="stylesheet" type="text/css" href="login_style.css">
-  <script defer src="login-auth.js"></script>
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="/maring-main-html/login_style.css">
+  <script defer src="/maring-main-html/login-auth.js"></script>
 
   <link rel="shortcut icon" href="/maring-main-html/favicon/favicon.ico" type="favicon.ico" />
   <link rel="icon" href="/maring-main-html/favicon/favicon.ico" type="favicon.ico" />
@@ -35,20 +35,21 @@
     <div class="box">
       <h1>Login</h1>
       <div id="login-error-msg-holder">
-        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">or password</span></p>
+        <p id="login-error-msg">Invalid username or password</span></p>
       </div>
+      <form id="login-form" action="index.html" method="post">
+        <div class="textbox" id="username-field">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Username" name="username">
+        </div>
 
-      <div class="textbox">
-        <i class="fas fa-user"></i>
-        <input type="text" placeholder="Username" name="" value="">
-      </div>
+        <div class="textbox" id="password-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" name="password">
+        </div>
 
-      <div class="textbox">
-        <i class="fas fa-lock"></i>
-        <input type="password" placeholder="Password" name="" value="">
-      </div>
-
-      <input type="button" class="login-submit-button" value="Sign in" name="" value="">
+        <input id="login-submit-button" class="login-button" type="button" value="Sign in" name="">
+      </form>
     </div>
   </div>
 </body>
