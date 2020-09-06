@@ -7,9 +7,7 @@
 }
 
 body {
-
-  font-family: , sans-serif;
-  background: url(login-bg-midres.png) no-repeat;
+  background: url(images/login-bg-midres.png) no-repeat;
   background-size: cover;
   top: 10;
   left: 10;
