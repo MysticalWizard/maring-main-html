@@ -56,10 +56,21 @@
         <input id="login-submit-button" class="login-button" type="button" value="Sign in" name="">
       </form>
     </div>
-    <div class="box">
-      <div class="go-back"></div>
+    <div class="box-bottom">
+      <div class="button-left">
+        <button class="go-back" onclick="goBack()">&lt; Go Back</button>
+      </div>
+      <div class="button-right">
+
+      </div>
     </div>
   </div>
+
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
 </body>
 
 </html>
