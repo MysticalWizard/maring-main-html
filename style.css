@@ -19,6 +19,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  position: fixed;
 }
 
 .nav-logo-container {
@@ -34,6 +35,12 @@ body {
 .nav-header-logo-text {
   width: 210px;
   height: auto;
+}
+
+.nav-tools {
+  text-align: right;
+  align-items: right;
+  height: 40px;
 }
 
 .back-to-top-button {
