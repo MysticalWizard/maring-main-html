@@ -102,3 +102,15 @@ body {
 .login-button:hover {
   background: #4caf50;
 }
+
+.box-bottom {
+  position: relative;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 360px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
