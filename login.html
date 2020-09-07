@@ -57,11 +57,20 @@
       </form>
     </div>
     <div class="box-bottom">
-      <div class="go-back">
-        <p class="go">Go Back</p>
+      <div class="button-left">
+        <button class="go-back" onclick="goBack()">&lt; Go Back</button>
+      </div>
+      <div class="button-right">
+
       </div>
     </div>
   </div>
+
+  <script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
 </body>
 
 </html>
