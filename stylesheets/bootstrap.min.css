@@ -2056,6 +2056,12 @@ select.form-control:focus::-ms-value {
         margin-bottom: 0
     }
 }
+
+.sign-display {
+  display: flex;
+  flex-direction: row;
+}
+
 .btn {
     display: inline-block;
     font-weight: 400;
@@ -2066,6 +2072,7 @@ select.form-control:focus::-ms-value {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-right: 20px;
     border: 1px solid transparent;
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -6110,6 +6117,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 .fixed-top {
     position: fixed;
+    margin-top: 64px;
     top: 0;
     right: 0;
     left: 0;
