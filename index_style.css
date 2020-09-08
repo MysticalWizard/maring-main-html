@@ -7,6 +7,11 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+
+.sign-display {
+  column-gap: 10px;
+}
+
 .sch-timetable-show-btn {
   display: flex;
   flex-direction: row;
@@ -15,4 +20,22 @@ img {
 .t-wA-img .t-wB-img {
   width: 1000px;
   height: auto;
+}
+
+.enlarge-img:hover {
+  cursor: pointer;
+}
+
+.row-btn-group {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  column-gap: 8px;
+}
+
+.row-btn {
+  display: flex;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  padding-right: 20px;
 }
