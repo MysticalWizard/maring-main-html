@@ -24,12 +24,15 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030
+  z-index: 1030;
 }
 
 .nav-logo-container {
   padding: 7px;
   align-items: left;
+
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-header-logo {
@@ -42,7 +45,7 @@ body {
   height: auto;
 }
 
-.nav-tools {
+.nav-login {
   text-align: right;
   align-items: right;
   height: 40px;
