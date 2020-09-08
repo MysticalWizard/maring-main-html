@@ -1,9 +1,15 @@
 body {
   background-color: ivory;
   font-family: Arial, sans-serif;
+  margin-top: 10rem;
 }
 
 h1 {
   color: darkblue;
   text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
