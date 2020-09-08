@@ -27,10 +27,15 @@ body {
   height: 15px;
   padding-left: 30px; padding-right: 30px;
   padding-top: 20px; padding-bottom: 25px;
-  margin-top: 20px;
+  margin-top: 50px;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 #login-error-msg-holder {
@@ -134,21 +139,9 @@ body {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .go-back:hover {
   cursor: pointer;
-}
-
-.box-bottom {
-  position: relative;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  width: 360px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
 }
