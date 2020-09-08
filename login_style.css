@@ -9,6 +9,7 @@
 body {
   background: url(images/login-bg-midres.png) no-repeat;
   background-size: cover;
+  line-height: 1.0;
   top: 10;
   left: 10;
 }
@@ -25,17 +26,13 @@ body {
 .box-bottom {
   width: 300px;
   height: 15px;
-  padding-left: 30px; padding-right: 30px;
-  padding-top: 20px; padding-bottom: 25px;
-  margin-top: 50px;
+  padding:20px;
+  margin-top: 20px;
+  margin-left: 0px;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  position: fixed;
 }
 
 #login-error-msg-holder {
@@ -140,6 +137,7 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 18px;
+  padding: 0px;
 }
 
 .go-back:hover {
