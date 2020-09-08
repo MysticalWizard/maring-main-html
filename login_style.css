@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: montserrat, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
@@ -25,7 +25,7 @@ body {
 
 .box-bottom {
   width: 300px;
-  height: 15px;
+  height: auto;
   padding:20px;
   margin-top: 20px;
   margin-left: 0px;
@@ -59,6 +59,7 @@ body {
 .login-box {
   width: 360px;
   position: absolute;
+  line-height: 1.0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -100,10 +101,12 @@ body {
 
 #username-field {
   border-bottom: 1px solid #4caf50;
+  line-height: normal;
 }
 
 #password-field {
   border-bottom: 1px solid #4caf50;
+  line-height: normal;
 }
 
 .login-button {
