@@ -26,6 +26,11 @@ img {
   cursor: pointer;
 }
 
+/*
+.yk-app {
+  background: url(images/yk.png);
+} */
+
 .rickrolled {
   width: 75%;
   margin-bottom: 15px;
