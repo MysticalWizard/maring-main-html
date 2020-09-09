@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta http-equiv="Content-Type" charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -33,7 +34,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="/maring-main-html/favicon/apple-icon-144x144.png" />
   <link rel="apple-touch-icon" sizes="152x152" href="/maring-main-html/favicon/apple-icon-152x152.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/maring-main-html/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192"  href="/maring-main-html/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/maring-main-html/favicon/android-icon-192x192.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="/maring-main-html/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="/maring-main-html/favicon/favicon-96x96.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/maring-main-html/favicon/favicon-16x16.png" />
@@ -42,6 +43,7 @@
   <meta name="msapplication-TileImage" content="/maring-main-html/favicon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
 </head>
+
 <body>
   <header id="main-header">
     <div class="navigation">
@@ -61,6 +63,9 @@
               <a class="btn btn-primary" href="login.html" role="button">
                 <p class="nav-tools-login">Log In</p>
               </a>
+              <form id="log-out" action="includes/logout.inc.php" method="post">
+                <button class="nav-logout-button" type="submit" name="logout-submit">Log Out</button>
+              </form>
             </a>
           </div>
         </nav>
@@ -85,11 +90,11 @@
                   <a class="nav-link" href="Lib.html">Libraries</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Terms and Definitions</a>
-                    <div class="dropdown-menu">
-                      <a href="school/terms-and-defs.html" class="dropdown-item">Page 1</a>
-                      <a href="school/terms-and-defs-2.html" class="dropdown-item">Page 2</a>
-                      <a href="school/terms-and-defs-3.html" class="dropdown-item">Page 3</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Terms and Definitions</a>
+                  <div class="dropdown-menu">
+                    <a href="school/terms-and-defs.html" class="dropdown-item">Page 1</a>
+                    <a href="school/terms-and-defs-2.html" class="dropdown-item">Page 2</a>
+                    <a href="school/terms-and-defs-3.html" class="dropdown-item">Page 3</a>
               </ul>
 
               <form class="form-inline my-2 my-lg-0">
@@ -115,27 +120,27 @@
         <div class="jumbotron">
           <div class="container">
             <h1 class="display-3">Hello there!</h1>
-            <p>Please sign in to gain full access to the page.  <br>Thank you, Have a nice day.</p>
+            <p>Please sign in to gain full access to the page. <br>Thank you, Have a nice day.</p>
             <div class="sign-display">
               <a class="btn btn-primary btn-lg" href="login.html" type="button">Sign In »</a>
               <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" type="button">Sign Up »</button>
-                <div class="modal" id="myModal">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">In Development...</h5>
-                        <button class="close" data-dismiss="modal">&times;</button>
-                      </div>
-                      <div class="modal-body">
-                        Hey, this feature is not ready yet...
-                        <br>Sorry for the inconvenience.
-                      </div>
-                      <div class="modal-footer">
-                        <button class="btn btn-secondary" data-dismiss="modal">Got it!</button>
-                      </div>
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">In Development...</h5>
+                      <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      Hey, this feature is not ready yet...
+                      <br>Sorry for the inconvenience.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary" data-dismiss="modal">Got it!</button>
                     </div>
                   </div>
                 </div>
+              </div>
               </p>
             </div>
           </div>
@@ -151,7 +156,9 @@
             </div>
             <div class="col-md-4 yk-app">
               <h2>YK appreciation club</h2>
-              <a href="https://www.google.com/search?q=what+is+life%3F"><p>YK is God</p></a>
+              <a href="https://www.google.com/search?q=what+is+life%3F">
+                <p>YK is God</p>
+              </a>
               <img class="rickrolled" src="images/rickrolled.gif" data-toggle="modal" data-target="#rick" alt="">
               <div class="modal" id="rick">
                 <div class="modal-dialog">
@@ -217,20 +224,20 @@
           </div>
           <br><br>
           <div class="card">
-              <div class="card-body">
-                  <h4 class="card-title">JavaScript Clock</h4>
-                  <p class="card-text">Analog clock using JavaScript.</p>
-                   <a href="jsClockDark.html" class="btn btn-outline-primary">See</a>
-              </div>
+            <div class="card-body">
+              <h4 class="card-title">JavaScript Clock</h4>
+              <p class="card-text">Analog clock using JavaScript.</p>
+              <a href="jsClockDark.html" class="btn btn-outline-primary">See</a>
+            </div>
           </div>
           <br>
           <div class="card">
-              <div class="card-body">
-                  <p>YaukDaPro</p>
-              </div>
+            <div class="card-body">
+              <p>YaukDaPro</p>
+            </div>
           </div>
           <br>
-          <hr>  <!-- This tag is a thematic break (and styled to display a line)-->
+          <hr> <!-- This tag is a thematic break (and styled to display a line)-->
           <br>
           <!-- Example row of columns -->
           <div class="social-media">
@@ -248,7 +255,9 @@
           <p class="end-of-page"> --- END OF PAGE --- </p>
           <hr>
           <div class="footer-ip-widget">
-            <div id="findipwidget"></div><div class="findiplink" id="findipurl">Powered by <a href="http://www.find-ip.net/" target="_blank">Find-IP.net</a></div><script defer src="//api.find-ip.net/widget.js?width=1110&"></script>
+            <div id="findipwidget"></div>
+            <div class="findiplink" id="findipurl">Powered by <a href="http://www.find-ip.net/" target="_blank">Find-IP.net</a></div>
+            <script defer src="//api.find-ip.net/widget.js?width=1110&"></script>
           </div>
           <hr>
         </div>
