@@ -63,6 +63,9 @@
               <a class="btn btn-primary" href="login.html" role="button">
                 <p class="nav-tools-login">Log In</p>
               </a>
+              <form id="log-out" action="includes/logout.inc.php" method="post">
+                <button class="nav-logout-button" type="submit" name="logout-submit">Log Out</button>
+              </form>
             </a>
           </div>
         </nav>
