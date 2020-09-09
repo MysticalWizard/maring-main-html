@@ -26,6 +26,11 @@ img {
   cursor: pointer;
 }
 
+.rickrolled {
+  width: 75%;
+  margin-bottom: 15px;
+}
+
 .row-btn-group {
   display: flex;
   flex-direction: row;
