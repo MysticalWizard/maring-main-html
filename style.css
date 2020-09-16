@@ -73,7 +73,7 @@ body {
 .nav_tools {
   display: flex;
   flex-wrap: nowrap;
-  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+  flex-direction: row; // cannot use `inherit` to get the `.navbar`s value
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -86,6 +86,10 @@ body {
 }
 
 .nav-login {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 6px;
   text-align: right;
   padding-right: 8px;
 }
