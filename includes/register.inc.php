@@ -71,6 +71,6 @@ if (isset($_POST['signup-submit'])) {
 
 }
 else {
-  header("Location: ../register.php?error=noaccess");
+  header("Location: ../register.php");
   exit();
 }
