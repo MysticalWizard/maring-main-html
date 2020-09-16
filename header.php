@@ -50,10 +50,10 @@
       <div class="nav-header">
         <nav class="nav-header-container navbar-expand-sm">
           <div class="nav-logo-container">
-            <a href="index.html">
+            <a href="index.php">
               <img class="nav-header-logo" src="images/mystWiz-sat.jpg" alt="logo">
             </a>
-            <a class="nav-header-logo-text" href="index.html">
+            <a class="nav-header-logo-text" href="index.php">
               <img class="nav-header-logo-text" src="images/mysticalWizard-font-header.jpg" alt="Mystical Wizard">
             </a>
           </div>
@@ -63,6 +63,8 @@
               <a class="btn btn-primary" href="login.html" role="button">
                 <p class="nav-tools-login">Log In</p>
               </a>
+            </div>
+            <div class="nav-logout nav-pills justify-content-end">
               <form id="log-out" class="nav-pills" action="includes/logout.inc.php" method="post">
                 <button class="nav-logout-button btn btn-secondary" type="submit" name="logout-submit">Log Out</button>
               </form>
