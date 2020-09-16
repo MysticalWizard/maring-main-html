@@ -72,10 +72,10 @@
                 </div>
               <?php } else { ?>
 
-                <a class="nav-account nav-pills justify-content-end" data-toggle="modal" data-target="#accNotLoggedIn"><i class="far fa-user-circle"></i></a>
+                <a class="nav-account nav-pills justify-content-end" href="#" data-toggle="modal" data-target="#accNotLoggedIn"><i class="far fa-user-circle"></i></a>
 
                 <div class="nav-login nav-pills justify-content-end">
-                  <a class="btn btn-primary" href="login.html" role="button">
+                  <a class="btn btn-primary" href="login.php" role="button">
                     <p class="nav-tools-login">Log In</p>
                   </a>
                 </div>
@@ -96,7 +96,7 @@
             <div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="jsClockDark.html">JS Clock</a>
@@ -141,5 +141,5 @@
         </div>
       </div>
     </div>
-    
+
   </header> <!-- /header -->
