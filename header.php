@@ -12,6 +12,7 @@
   <title>Maring Network</title>
 
   <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Bootstrap core CSS -->
   <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
 
@@ -63,14 +64,14 @@
           <div class="nav-tools-container">
             <?php
               if (isset($_SESSION['userId'])) {
-              ?>
-                <a class="nav-account nav-pills justify-content-end" href="#"><i class="far fa-user-circle"></i></a>
+              ?> <!-- IF Logged In -->
+                <a class="nav-account nav-pills justify-content-end" href="account.php"><i class="far fa-user-circle"></i></a>
                 <div class="nav-logout nav-pills justify-content-end">
                   <form id="log-out" class="nav-pills" action="includes/logout.inc.php" method="post">
                     <button class="nav-logout-button btn btn-secondary" type="submit" name="logout-submit">Log Out</button>
                   </form>
                 </div>
-              <?php } else { ?>
+              <?php } else { ?> <!-- IF Logged Out -->
 
                 <a class="nav-account nav-pills justify-content-end" href="#" data-toggle="modal" data-target="#accNotLoggedIn"><i class="far fa-user-circle"></i></a>
 
@@ -88,7 +89,7 @@
       <div class="sub-nav">
         <div class="sub-nav-container">
           <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#"><i class="far fa-compass"></i> Navbar</a>
+            <a class="navbar-brand" href="#"><i class="far fa-compass"></i> Main</a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
