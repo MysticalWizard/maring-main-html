@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -58,17 +61,27 @@
             </a>
           </div>
           <div class="nav-tools-container">
-            <a class="nav-account nav-pills justify-content-end" href="#"><i class="far fa-user-circle"></i></a>
-            <div class="nav-login nav-pills justify-content-end">
-              <a class="btn btn-primary" href="login.html" role="button">
-                <p class="nav-tools-login">Log In</p>
-              </a>
-            </div>
-            <div class="nav-logout nav-pills justify-content-end">
-              <form id="log-out" class="nav-pills" action="includes/logout.inc.php" method="post">
-                <button class="nav-logout-button btn btn-secondary" type="submit" name="logout-submit">Log Out</button>
-              </form>
-            </div>
+            <?php
+              if (isset($_SESSION['userId'])) {
+              ?>
+                <a class="nav-account nav-pills justify-content-end" href="#"><i class="far fa-user-circle"></i></a>
+                <div class="nav-logout nav-pills justify-content-end">
+                  <form id="log-out" class="nav-pills" action="includes/logout.inc.php" method="post">
+                    <button class="nav-logout-button btn btn-secondary" type="submit" name="logout-submit">Log Out</button>
+                  </form>
+                </div>
+              <?php } else { ?>
+
+                <a class="nav-account nav-pills justify-content-end" data-toggle="modal" data-target="#accNotLoggedIn"><i class="far fa-user-circle"></i></a>
+
+                <div class="nav-login nav-pills justify-content-end">
+                  <a class="btn btn-primary" href="login.html" role="button">
+                    <p class="nav-tools-login">Log In</p>
+                  </a>
+                </div>
+              <?php
+              }
+            ?>
           </div>
         </nav>
       </div>
@@ -111,4 +124,22 @@
         <a class="back-to-top-button" href="#"> <i class="fas fa-arrow-up"></i> </a>
       </div>
     </div>
+    <div class="modal" id="accNotLoggedIn">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Reminder</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Please Sign In first before accessing the account page.
+            <br>Thank you!
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Got it!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </header> <!-- /header -->
