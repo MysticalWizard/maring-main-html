@@ -114,11 +114,6 @@ body {
   column-gap: 15px;
 }
 
-.back-to-top {
-  position: fixed;
-  z-index: 1100
-}
-
 .back-to-top-button {
   position: fixed;
   width: 50px;
