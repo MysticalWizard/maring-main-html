@@ -30,7 +30,7 @@ if (isset($_POST['signup-submit'])) {
   }
   else {
 
-    $sql = "SELECT uidUsers FROM user WHERE uidUsers=?";
+    $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
       header("Location: ../register.php?error=sqlerror");
@@ -71,6 +71,6 @@ if (isset($_POST['signup-submit'])) {
 
 }
 else {
-  header("Location: ../register.php");
+  header("Location: ../register.php?error=noaccess");
   exit();
 }
