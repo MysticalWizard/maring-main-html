@@ -1,40 +1,36 @@
 <?php
   require 'header.php';
+
+  require 'includes/dbh.inc.php';
 ?>
 
 <div id="content">
   <div class="main">
-    <p>...</p>
-    <p><a href="login.html">login.html</a></p>
-    <br>
+    <p><a href="index.php">index.php</a></p>
+    <br><br><br>
     <main role="main">
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <div class="container">
-          <h1 class="display-3">Hello there!</h1>
-          <p>Please sign in to gain full access to the page. <br>Thank you, Have a nice day.</p>
-          <div class="sign-display">
-            <a class="btn btn-primary btn-lg" href="login.html" type="button">Sign In »</a>
-            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" type="button">Sign Up »</button>
-            <div class="modal" id="myModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">In Development...</h5>
-                    <button class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <div class="modal-body">
-                    Hey, this feature is not ready yet...
-                    <br>Sorry for the inconvenience.
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal">Got it!</button>
-                  </div>
-                </div>
+
+          <?php
+            if (isset($_SESSION['userId'])) {
+            ?> <!-- IF Logged In -->
+              <h1 class="display-3">Hello there, <?php echo($_SESSION['userUid']) ?>!</h1>
+              <p>You are logged in as <a href="account.php" target="_blank"><?php echo$_SESSION['userUid']?></a>, Have a nice day.</p>
+
+
+            <?php } else { ?> <!-- IF Logged Out -->
+              <h1 class="display-3">Hello there!</h1>
+              <p>Please sign in to gain full access to the page. <br>Thank you, Have a nice day.</p>
+              <div class="sign-display">
+                <a class="btn btn-primary btn-lg" href="login.php" type="button">Sign In »</a>
+                <a class="btn btn-primary btn-lg" href="register.php" type="button">Sign Up »</a>
+                </p>
               </div>
-            </div>
-            </p>
-          </div>
+            <?php
+            }
+          ?>
         </div>
       </div>
       <div class="container">
@@ -44,11 +40,11 @@
           <div class="col-md-4">
             <h2>Terms & Definitions</h2>
             <p>Page with a handful of CS terms.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <p><a class="btn btn-secondary" href="school/terms-and-defs.html" role="button">View details »</a></p>
           </div>
           <div class="col-md-4 yk-app">
             <h2>YK appreciation club</h2>
-            <a href="https://www.google.com/search?q=what+is+the+meaning+of+life%3F">
+            <a href="https://www.google.com/search?q=what+is+the+meaning+of+life%3F" target="_blank">
               <p>YK is God</p>
             </a>
             <img class="rickrolled" src="images/rickrolled.gif" data-toggle="modal" data-target="#rick" alt="">
@@ -73,7 +69,15 @@
           </div>
           <div class="col-md-4">
             <h2>Raynor's CS Projects</h2>
-            <p>To connect, you need <a href="zerotier.html">Zerotier</a>, contact Raynor after installing zerotier for more information.</p>
+            <p>To connect, you need <a href="zerotier.html">Zerotier</a>, contact <a href="mailto:23r.he@dulwich-shanghai.cn">Raynor</a> after installing <a href="zerotier.html">Zerotier</a> for more information.</p><br>
+            <p><b>Current Status:</b></p>
+
+            <!-- <img class="load-fail" src="http://192.168.192.63:3000/imgs/favicon.ico" alt="" onload="pageOnline()" onerror="pageOffline()"> -->
+
+            <p id="raynor-port3000"></p>
+            <p id="raynor-port8888"></p>
+            
+            <br>
             <div class="button-gap">
               <p><a class="btn btn-secondary" href="zerotier.html" role="button">Zerotier »</a> <a class="btn btn-secondary" href="mailto:23r.he@dulwich-shanghai.cn" role="button">Contact »</a></p>
               <p><a class="btn btn-secondary " href="http://192.168.192.67:8888/Main_Page.html" role="button">Visit »</a></p>
@@ -141,9 +145,34 @@
 
       </div> <!-- /container -->
     </main>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">In Development...</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Hey, this feature is not ready yet...
+            <br>Sorry for the inconvenience.
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Got it!</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div> <!-- /#content -->
+<script>
+  function pageOnline() {
+    document.getElementById("raynor-port3000").innerHTML = "Online";
+  }
 
+  function pageOffline() {
+    document.getElementById("raynor-port3000").innerHTML = "Offline";
+  }
+</script>
 <?php
   require 'footer.php';
 ?>
