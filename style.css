@@ -12,6 +12,18 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
+.force-anchor {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects
+}
+
+.force-anchor:hover {
+  color: #0056b3;
+  text-decoration: underline
+}
+
 .nav-header {
   height: 64px;
   background-color: #091921;
@@ -100,6 +112,11 @@ body {
 
 .button-gap {
   column-gap: 15px;
+}
+
+.back-to-top {
+  position: fixed;
+  z-index: 1100
 }
 
 .back-to-top-button {
