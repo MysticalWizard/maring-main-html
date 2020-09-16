@@ -59,14 +59,14 @@
           </div>
           <div class="nav-tools-container">
             <a class="nav-account nav-pills justify-content-end" href="#"><i class="far fa-user-circle"></i></a>
-            <a class="nav-login nav-pills justify-content-end" href="login.html">
+            <div class="nav-login nav-pills justify-content-end">
               <a class="btn btn-primary" href="login.html" role="button">
                 <p class="nav-tools-login">Log In</p>
               </a>
-              <form id="log-out" action="includes/logout.inc.php" method="post">
-                <button class="nav-logout-button" type="submit" name="logout-submit">Log Out</button>
+              <form id="log-out" class="nav-pills" action="includes/logout.inc.php" method="post">
+                <button class="nav-logout-button btn btn-secondary" type="submit" name="logout-submit">Log Out</button>
               </form>
-            </a>
+            </div>
           </div>
         </nav>
       </div>
