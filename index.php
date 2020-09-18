@@ -65,7 +65,7 @@
                 </div>
               </div>
             </div>
-            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            <p><a class="btn btn-secondary" href="http://192.168.192.69:3000/main_page.html" role="button">Attain Enlightenment »</a></p>
           </div>
           <div class="col-md-4">
             <h2>Raynor's CS Projects</h2>
@@ -76,7 +76,7 @@
 
             <p id="raynor-port3000"></p>
             <p id="raynor-port8888"></p>
-            
+
             <br>
             <div class="button-gap">
               <p><a class="btn btn-secondary" href="zerotier.html" role="button">Zerotier »</a> <a class="btn btn-secondary" href="mailto:23r.he@dulwich-shanghai.cn" role="button">Contact »</a></p>
