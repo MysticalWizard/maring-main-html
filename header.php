@@ -111,6 +111,8 @@
                     <a href="school/terms-and-defs.html" class="dropdown-item">Page 1</a>
                     <a href="school/terms-and-defs-2.html" class="dropdown-item">Page 2</a>
                     <a href="school/terms-and-defs-3.html" class="dropdown-item">Page 3</a>
+                  </div>
+                </li>
               </ul>
 
               <form class="form-inline my-2 my-lg-0">
