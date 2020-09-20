@@ -26,7 +26,6 @@
               <div class="sign-display">
                 <a class="btn btn-primary btn-lg" href="login.php" type="button">Sign In »</a>
                 <a class="btn btn-primary btn-lg" href="register.php" type="button">Sign Up »</a>
-                </p>
               </div>
             <?php
             }
@@ -90,7 +89,7 @@
           </div>
           <div class="card-body">
             <h4 class="card-title">School Timetable</h4>
-            <p class="card-text">Provided by Firefly.</p>
+            <p class="card-text">Provided by <a href="https://dcspd.fireflycloud.net.cn/ss-students">Firefly</a>.</p>
             <div class="sch-timetable-show-btn">
               <div class="row-btn-group list-group mb-4" id="list-tab" role="tablist">
                 <button class="row-btn btn btn-primary d-block list-group-item list-group-item-action active" id="t-wA-btn" href="#t-wA" data-toggle="list">Week A</button>
