@@ -65,16 +65,14 @@
             <?php
               if (isset($_SESSION['userId'])) {
               ?> <!-- IF Logged In -->
-                <a class="nav-account nav-pills justify-content-end" href="account.php"><i class="far fa-user-circle"></i></a>
+                <a class="nav-account nav-pills nav-acc-btn justify-content-end" href="account.php"><i class="far fa-user-circle"></i></a>
                 <div class="nav-logout nav-pills justify-content-end">
                   <form id="log-out" class="nav-pills" action="includes/logout.inc.php" method="post">
                     <button class="nav-logout-button btn btn-secondary" type="submit" name="logout-submit">Log Out</button>
                   </form>
                 </div>
               <?php } else { ?> <!-- IF Logged Out -->
-
-                <a class="nav-account nav-pills justify-content-end" href="#" data-toggle="modal" data-target="#accNotLoggedIn"><i class="far fa-user-circle"></i></a>
-
+                <button class="nav-account nav-pills nav-acc-btn justify-content-end" data-toggle="modal" data-target="#accNotLoggedIn"><i class="far fa-user-circle"></i></button>
                 <div class="nav-login nav-pills justify-content-end">
                   <a class="btn btn-primary" href="login.php" role="button">
                     <p class="nav-tools-login">Log In</p>
