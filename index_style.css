@@ -23,6 +23,14 @@ img {
 #Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
   animation: float 1s infinite ease-in-out alternate;
 }
+#Polygon-1-fill-white , #Polygon-2-fill-white , #Polygon-3-fill-white , #Polygon-4-fill-white , #Polygon-4-fill-white, #Polygon-5-fill-white {
+  animation: float 1s infinite ease-in-out alternate;
+  fill: #fff;
+}
+#Polygon-1-fill-grey , #Polygon-2-fill-grey , #Polygon-3-fill-grey , #Polygon-4-fill-grey , #Polygon-4-fill-grey, #Polygon-5-fill-grey {
+  animation: float 1s infinite ease-in-out alternate;
+  fill: #e9ecef;
+}
 #Polygon-2 {
   animation-delay: .2s;
 }
@@ -34,6 +42,22 @@ img {
 }
 #Polygon-5 {
   animation-delay: .8s;
+}
+
+#Polygon-1:hover , #Polygon-1-fill-grey:hover , #Polygon-1-fill-white:hover {
+  fill: #007FB2;
+}
+#Polygon-2:hover , #Polygon-2-fill-grey:hover , #Polygon-2-fill-white:hover {
+  fill: #EF4A5B;
+}
+#Polygon-3:hover , #Polygon-3-fill-grey:hover , #Polygon-3-fill-white:hover {
+  fill: #795D9C;
+}
+#Polygon-4:hover , #Polygon-4-fill-grey:hover , #Polygon-4-fill-white:hover {
+  fill: #F2773F;
+}
+#Polygon-5:hover , #Polygon-5-fill-grey:hover , #Polygon-5-fill-white:hover {
+  fill: #36B455;
 }
 
 @keyframes float {
@@ -56,6 +80,10 @@ img {
     margin-left: -190px;
     text-align: center;
   }
+}
+
+.greet-card {
+  background-clip: border-box;
 }
 
 .sign-display {
