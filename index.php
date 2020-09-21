@@ -39,7 +39,7 @@
           <div class="col-md-4">
             <h2>Terms & Definitions</h2>
             <p>Page with a handful of CS terms.</p>
-            <p><a class="btn btn-secondary" href="school/terms-and-defs.html" role="button">View details »</a></p>
+            <p><a class="btn btn-secondary" href="internet/terms-and-defs.html" role="button">View details »</a></p>
           </div>
           <div class="col-md-4 yk-app">
             <h2>YK appreciation club</h2>
@@ -70,7 +70,9 @@
             <h2>Raynor's CS Projects</h2>
             <p>To connect, you need <a href="zerotier.html">Zerotier</a>, contact <a href="mailto:23r.he@dulwich-shanghai.cn">Raynor</a> after installing <a href="zerotier.html">Zerotier</a> for more information.</p><br>
             <p><b>Current Status:</b></p>
-
+            <p>Checking...</p>
+            <!-- <p>Offline</p> -->
+            <!-- <p>Online</p> -->
             <!-- <img class="load-fail" src="http://192.168.192.63:3000/imgs/favicon.ico" alt="" onload="pageOnline()" onerror="pageOffline()"> -->
 
             <p id="raynor-port3000"></p>
