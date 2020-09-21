@@ -110,10 +110,11 @@ body {
   margin-bottom: 0;
 }
 
-.img-banner {
+/* .img-banner {
   background: url(images/img-banner-px-citySunset.png) no-repeat !important;
   background-size: cover !important;
-}
+  background-position: bottom;
+} */
 
 .button-gap {
   column-gap: 15px;
