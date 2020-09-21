@@ -13,10 +13,10 @@
 
   <script async src='https://www.google-analytics.com/analytics.js'></script>
   <!-- Bootstrap core CSS -->
-  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="stylesheets/jumbotron.css" rel="stylesheet">
+  <link href="css/jumbotron.css" rel="stylesheet">
 
   <!-- Global styles -->
   <link rel="stylesheet" type="text/css" href="style.css" />
