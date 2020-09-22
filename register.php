@@ -8,6 +8,13 @@
           <section>
             <br><br><br><br><br><br>
             <h1>Register</h1>
+            <?php
+              if (isset($_GET['error'])) {
+                if ($_GET['error'] == "emptyfields") {
+                  echo '<p class="signup-error">Fill in all fields!</p>'
+                }
+              }
+            ?>
             <form class="signup-form" action="includes/register.inc.php" method="post">
               <input type="text" name="uid" placeholder="Username" value="" maxlength="32">
               <input type="text" name="mail" placeholder="E-Mail" value="">
