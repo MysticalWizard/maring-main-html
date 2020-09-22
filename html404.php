@@ -11,36 +11,36 @@
     <title>404 : Page not found</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/jumbotron.css" rel="stylesheet">
+    <link href="css/jumbotron.css" rel="stylesheet">
 
     <!-- Global styles -->
-    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
     <!-- Local styles -->
-    <link rel="stylesheet" href="/css/html404.css">
+    <link rel="stylesheet" href="css/html404.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/favicon/favicon.ico" type="favicon.ico" />
-    <link rel="icon" href="/favicon/favicon.ico" type="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/favicon/manifest.json" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="favicon.ico" />
+    <link rel="icon" href="favicon/favicon.ico" type="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
@@ -52,26 +52,26 @@
           <nav class="nav-header-container navbar-expand-sm">
             <div class="nav-logo-container">
               <a href="index.php">
-                <img class="nav-header-logo" src="/images/mystWiz-sat.jpg" alt="logo">
+                <img class="nav-header-logo" src="images/mystWiz-sat.jpg" alt="logo">
               </a>
               <a class="nav-header-logo-text" href="index.php">
-                <img class="nav-header-logo-text" src="/images/mysticalWizard-font-header.jpg" alt="Mystical Wizard">
+                <img class="nav-header-logo-text" src="images/mysticalWizard-font-header.jpg" alt="Mystical Wizard">
               </a>
             </div>
             <div class="nav-tools-container">
               <?php
                 if (isset($_SESSION['userId'])) {
                 ?> <!-- IF Logged In -->
-                  <a class="nav-account nav-pills nav-acc-btn justify-content-end" href="/account.php"><i class="far fa-user-circle"></i></a>
+                  <a class="nav-account nav-pills nav-acc-btn justify-content-end" href="account.php"><i class="far fa-user-circle"></i></a>
                   <div class="nav-logout nav-pills justify-content-end">
-                    <form id="log-out" class="nav-pills" action="/includes/logout.inc.php" method="post">
+                    <form id="log-out" class="nav-pills" action="includes/logout.inc.php" method="post">
                       <button class="nav-logout-button btn btn-secondary" type="submit" name="logout-submit">Log Out</button>
                     </form>
                   </div>
                 <?php } else { ?> <!-- IF Logged Out -->
                   <button class="nav-account nav-pills nav-acc-btn justify-content-end" data-toggle="modal" data-target="#accNotLoggedIn"><i class="far fa-user-circle"></i></button>
                   <div class="nav-login nav-pills justify-content-end">
-                    <a class="btn btn-primary" href="/login.php" role="button">
+                    <a class="btn btn-primary" href="login.php" role="button">
                       <p class="nav-tools-login">Log In</p>
                     </a>
                   </div>
