@@ -11,7 +11,7 @@
             <?php
               if (isset($_GET['error'])) {
                 if ($_GET['error'] == "emptyfields") {
-                  echo '<p class="signup-error">Fill in all fields!</p>'
+                  echo '<p class="signup-error">Fill in all fields!</p>';
                 }
               }
             ?>
