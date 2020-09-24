@@ -18,6 +18,7 @@
   <!-- Local styles -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="internet.css" />
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="../favicon/favicon.ico" type="favicon.ico" />
@@ -54,8 +55,8 @@
             </a>
           </div>
           <div class="nav-tools-container">
-            <a class="nav-login nav-pills justify-content-end" href="login.html">
-              <a class="btn btn-primary" href="login.html" role="button">
+            <a class="nav-login nav-pills justify-content-end" href="../login.php">
+              <a class="btn btn-primary" href="../login.php" role="button">
                 <p class="nav-tools-login">Log In</p>
               </a>
             </a>
@@ -84,12 +85,12 @@
                 <li class="nav-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Internet <span class="sr-only">(current)</span></a>
                   <div class="dropdown-menu">
-                    <a href="internet-definitions.html" class="dropdown-item">About the Internet</a>
-                    <a href="internet-definitions.html" class="dropdown-item">History of the Internet</a>
+                    <a href="about-internet.html" class="dropdown-item">About the Internet</a>
+                    <a href="history-internet.html" class="dropdown-item"><b>History of the Internet</b></a>
                     <a href="internet-definitions.html" class="dropdown-item">Internet Terms and Definitions</a>
                     <a href="data-transmissions.html" class="dropdown-item">Data Transmission Terms and Definitions</a>
-                    <a href="internet-definitions.html" class="dropdown-item">Gaining access to the Internet</a>
-                    <a href="internet-definitions.html" class="dropdown-item">How HTTPS works</a>
+                    <a href="accessing-internet.html" class="dropdown-item">Gaining access to the Internet</a>
+                    <a href="how-https-works.html" class="dropdown-item">How HTTPS works</a>
                   </div>
                 </li>
               </ul>
@@ -106,19 +107,105 @@
       </div>
     </div>
   </header>
-  <div class="content">
+  <div id="content">
     <main class="main">
       <div class="jumbotron">
         <div class="container">
-          <h1 class="display-3">Terms and Definitions</h1>
-          <p>Page with a handful of CS terms.</p>
+          <h1 class="display-3">History of the Internet</h1>
+          <p>Page on the History of the Internet</p>
         </div>
       </div>
+      <br>
       <div class="container">
-        <div class="history">
-          <div class="history-of-history">
-            <!-- code -->
+        <div class="sir-tim-berners-lee card">
+          <div class="card-body">
+            <h2>Sir Tim Berners-Lee</h2>
+            <div class="d-flex flex-row row-hl">
+              <div class="d-flex flex-column row-hl">
+                <div class="p-4 item-hl"><p>Sir Tim Berners-Lee is a British computer scientist. He was born in 8th June 1955, London, and his parents were early computer scientists, working on one of the earliest computers.</p></div>
+                <div class="p-4 item-hl"><br><button class="btn btn-outline-primary d-block mb-4" data-toggle="collapse" data-target="#stbl-biography">Biography</button></div>
+              </div>
+              <img width="200px" src="../images/tim-berners-lee-conferenciante.jpg" alt="timbernerslee" />
+            </div>
+            <div class="collapse mb-5" id="stbl-biography">
+              <div class="biography">
+                <h4>Biography</h4>
+                <p>Sir Tim Berners-Lee invented the <a href="#www">World Wide Web</a> in 1989. </p>
+                <p>He is the co-founder and CTO of <a href="https://inrupt.com/">Inrupt.com</a>, a tech start-up which uses, promotes and helps develop the open source
+                  <a href="https://solidproject.org">Solid</a> platform. Solid aims to give people control and agency over their data, questioning many assumptions about how the web has to work. Solid technically is is new level of standard at the web layer, which adds things never put into the original spec, such as global single sign-on, universal access control, and an universal data API so that any app can store data in any storage place.
+                  Socially Solid is a movement away from much of the issues with the current WWW, and toward a world in which users are in control, and empowered by large amounts of data, private, shared, and public. </p>
+                <p>Sir Tim is the Director of the World Wide Web Consortium (<a href="http://www.w3.org">W3C</a>),
+                  a Web standards organization founded in 1994 which develops interoperable technologies (specifications, guidelines, software, and tools) to lead the Web to its full potential. He is a Director of the
+                  <a href="http://www.webfoundation.org/">World Wide Web Foundation</a> which was launched in 2009 to coordinate efforts to further the potential of the Web to benefit humanity. </p>
+                <p>A graduate of Oxford University, Sir Tim invented the Web while at <a href="http://www.cern.ch/">CERN</a>,
+                  the European Particle Physics Laboratory, in 1989. He wrote the first web client and server in 1990. His specifications of URIs, HTTP and HTML were refined as Web technology spread.</p>
+                <p>He is the 3Com Founders Professor of Engineering in the School of Engineering with a joint appointment in the Department of Electrical Engineering and Computer Science at the Laboratory for Computer Science and Artificial Intelligence (
+                  <a href="http://csail.mit.edu/">CSAIL</a>) at the Massachusetts Institute of Technology (<a href="http://web.mit.edu/">MIT</a>) where he co-leads the <a href="http://dig.csail.mit.edu/">Decentralized Information Group (DIG)</a>. <br />
+                </p>
+                <p>The <a href="http://dig.csail.mit.edu">Decentralized Information Group</a>,
+                  works on the <a href="https://solid.inrupt.com">Solid Project</a> to give people control of their own data and to re-decentralize the Web. He is the co-founder and CTO of
+                  <a href="https://inrupt.com">inrupt</a>, the company launched to ensure the success of the Solid platform and its open source community, and to build the ecosystem that supports it.<br />
+                </p>
+                <p>He is also a Professor in the <a href="http://www.ox.ac.uk/news/2016-10-27-sir-tim-berners-lee-joins-oxfords-department-computer-science">Computer Science Department at the University of Oxford</a>, UK. He is President
+                  of and founded the <a href="https://theodi.org">Open Data Institute</a>
+                  in London. He is President of London's <a href="https://www.odi.org/">Open Data Institute</a>. </p>
+                <p>In 2001 he became a Fellow of the Royal Society. He has been the recipient of several international awards including the Japan Prize, the Prince of Asturias Foundation Prize, the Millennium Technology Prize and Germany's Die Quadriga award. In 2004 he was knighted by H.M. Queen Elizabeth and in 2007 he was awarded the Order of Merit. In 2009 he was elected a foreign associate of the National Academy of Sciences. He is the author of "
+                  <a href="Weaving/Overview.html">Weaving the Web</a>".</p>
+                <p>On March 18 2013, Sir Tim, along with Vinton Cerf, Robert Kahn, Louis Pouzin and Marc Andreesen, was awarded the
+                  <a href="http://qeprize.org">Queen Elizabeth Prize for Engineering</a> for "ground-breaking innovation in engineering that has been of global benefit to humanity."</p>
+                <p>Sir Tim has promoted open government data globally and spends time fighting for rights such as net neutrality, privacy and the openness of the Web. <br />
+                </p>
+                <p>On 4 April 2017, Sir Tim was awarded the
+                  <a href="http://awards.acm.org/about/2016-turing" title="turing prize">ACM A.M. Turing Prize</a> for inventing the World Wide Web, the first web browser, and the fundamental protocols and algorithms allowing the Web to scale. The Turing Prize, called the "Nobel Prize of Computing" is considered one of the most prestigious awards in Computer Science. <br />
+                </p>
+              </div>
+            </div>
+            <br>
           </div>
+        </div>
+        <br><a class="nav-anchor" id="www"></a>
+        <div class="about-www card">
+          <div class="card-body">
+            <h2>WorldWideWeb</h2>
+            <div class="d-flex flex-column row-hl">
+              <div class="p-4 item-hl"><p>The WorldWideWeb (W3) is a wide-area hypermedia information retrieval initiative aiming to give universal access to a large universe of documents.</p></div>
+              <div class="p-4 item-hl"><img width="500px" src="../images/timbernerslee1.jpg" alt="timbernerslee" /></div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="tech-www card">
+          <div class="card-body">
+            <h2>Technologies Tim invented to make the WWW work</h2>
+            <div class="d-flex flex-column row-hl">
+              <div class="p-4 item-hl">
+                <ul><li>HTML: HyperText Markup Language. The markup (formatting) language for the web.</li></ul><hr>
+                <ul><li>URI: Uniform Resource Identifier. A kind of “address” that is unique and used to identify to each resource on the web. It is also commonly called a URL.</li></ul><hr>
+                <ul><li>HTTP: Hypertext Transfer Protocol. Allows for the retrieval of linked resources from across the web.</li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="impact-of-decentralised-n-royalty-free-design card">
+          <div class="card-body">
+          <h2>Impact of the Decentralised and Royalty-Free Design</h2>
+          <div class="d-flex flex-column row-hl">
+            <div class="p-4 item-hl">
+              <ul><li>Decentralisation: No permission is needed from a central authority to post anything on the web, there is no central controlling node, and so no single point of failure … and no “kill switch”! This also implies freedom from indiscriminate censorship and surveillance.</li></ul><hr>
+              <ul><li>Non-discrimination: If I pay to connect to the internet with a certain quality of service, and you pay to connect with that or a greater quality of service, then we can both communicate at the same level. This principle of equity is also known as Net Neutrality.</li><hr><li>Bottom-up design: Instead of code being written and controlled by a small group of experts, it was developed in full view of everyone, encouraging maximum participation and experimentation.</li></ul><hr>
+              <ul><li>Universality: For anyone to be able to publish anything on the web, all the computers involved have to speak the same languages to each other, no matter what different hardware people are using; where they live; or what cultural and political beliefs they have. In this way, the web breaks down silos while still allowing diversity to flourish.</li></ul><hr>
+              <ul><li>Consensus: For universal standards to work, everyone had to agree to use them. Tim and others achieved this consensus by giving everyone a say in creating the standards, through a transparent, participatory process at W3C.</li></ul>
+            </div>
+          </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <div class="more-details">
+          <a href="https://www.w3.org/">https://www.w3.org/</a><br>
+          <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">http://info.cern.ch/hypertext/WWW/TheProject.html</a><br>
+          <a href="https://webfoundation.org/about/vision/history-of-the-web/">https://webfoundation.org/about/vision/history-of-the-web/</a><br>
         </div>
       </div>
     </main>
