@@ -1,3 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a.nav-anchor {
+    display: block;
+    position: relative;
+    top: -138px;
+    visibility: hidden;
+}
+
+.card {
+  position: relative;
+}
+
 .row-btn-group {
     display: flex;
     flex-direction: row;
@@ -9,3 +24,68 @@
   display: flex;
   flex-direction: row;
 }
+
+.sidebar {
+  background: transparent;
+  top: 294px;
+  height: 7250px;
+  width: 10%;
+  float: left;
+  position: relative;
+}
+
+.quick-nav {
+  background: #e7eef1;
+  box-sizing: border-box;
+  padding: 20px 10px 20px 10px;
+  border-color: #000;
+  border-width: 2px;
+  border-radius: 2px;
+  font-size: 15px;
+
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 20%;
+  left: 1%;
+  width: 200px;
+  display: flex;
+  z-index: 999;
+}
+
+.box-left .box-right {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+}
+
+.box-mid {
+  padding: 0.5rem;
+}
+
+.box-right {
+  display: inline-block;
+  margin-right: 1px;
+  flex-direction: row-reverse;
+}
+
+.sidebar h4 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 5px;
+}
+
+.scroll-list {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  padding: 24px;
+  //margin: 48px auto 0;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 24px
+  }
