@@ -109,7 +109,7 @@
                     <a href="internet/internet-definitions.html" class="dropdown-item">About the Internet</a>
                     <a href="internet/internet-definitions.html" class="dropdown-item">History of the Internet</a>
                     <a href="internet/internet-definitions.html" class="dropdown-item">Internet Terms and Definitions</a>
-                    <a href="internet/internet-definitions.html" class="dropdown-item">Data Transmission Terms and Definitions</a>
+                    <a href="internet/data-transmissions.html" class="dropdown-item">Data Transmission Terms and Definitions</a>
                     <a href="internet/internet-definitions.html" class="dropdown-item">Gaining access to the Internet</a>
                     <a href="internet/internet-definitions.html" class="dropdown-item">How HTTPS works</a>
                   </div>
