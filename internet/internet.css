@@ -1,0 +1,11 @@
+.row-btn-group {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    column-gap: 12px;
+}
+
+.transmission-tab-btn {
+  display: flex;
+  flex-direction: row;
+}
