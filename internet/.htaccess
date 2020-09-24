@@ -1,1 +1,2 @@
+ErrorDocument 403 /maring-main-html/internet/html403.php
 ErrorDocument 404 /maring-main-html/internet/html404.php
