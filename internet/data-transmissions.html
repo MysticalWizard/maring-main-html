@@ -55,8 +55,8 @@
             </a>
           </div>
           <div class="nav-tools-container">
-            <a class="nav-login nav-pills justify-content-end" href="login.html">
-              <a class="btn btn-primary" href="login.html" role="button">
+            <a class="nav-login nav-pills justify-content-end" href="../login.php">
+              <a class="btn btn-primary" href="../login.php" role="button">
                 <p class="nav-tools-login">Log In</p>
               </a>
             </a>
@@ -85,12 +85,12 @@
                 <li class="nav-item dropdown active">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Internet <span class="sr-only">(current)</span></a>
                   <div class="dropdown-menu">
-                    <a href="internet-definitions.html" class="dropdown-item">About the Internet</a>
-                    <a href="internet-definitions.html" class="dropdown-item">History of the Internet</a>
+                    <a href="about-internet.html" class="dropdown-item">About the Internet</a>
+                    <a href="history-internet.html" class="dropdown-item">History of the Internet</a>
                     <a href="internet-definitions.html" class="dropdown-item">Internet Terms and Definitions</a>
-                    <a href="data-transmissions.html" class="dropdown-item"><b>Data Transmission</b></a>
-                    <a href="internet-definitions.html" class="dropdown-item">Gaining access to the Internet</a>
-                    <a href="internet-definitions.html" class="dropdown-item">How HTTPS works</a>
+                    <a href="data-transmissions.html" class="dropdown-item"><b>Data Transmission Terms and Definitions</b></a>
+                    <a href="accessing-internet.html" class="dropdown-item">Gaining access to the Internet</a>
+                    <a href="how-https-works.html" class="dropdown-item">How HTTPS works</a>
                   </div>
                 </li>
               </ul>
@@ -128,24 +128,24 @@
                 </div>
                 <div class="transmission-tab-btn">
                   <div class="row-btn-group list-group mb-4" id="list-tab" role="tablist">
-                    <button class="row-btn btn btn-primary d-block list-group-item list-group-item-action active" id="serial-transmission" href="#t-wA" data-toggle="list">Serial Transmission</button>
-                    <button class="row-btn btn btn-primary d-block list-group-item list-group-item-action" id="parallel-transmission" href="#t-wB" data-toggle="list">Parallel Transmission</button>
+                    <button class="row-btn btn btn-primary d-block list-group-item list-group-item-action active" id="serial-transmission-btn" href="#serial-transmission" data-toggle="list">Serial Transmission</button>
+                    <button class="row-btn btn btn-primary d-block list-group-item list-group-item-action" id="parallel-transmission-btn" href="#parallel-transmission" data-toggle="list">Parallel Transmission</button>
                   </div>
                 </div>
                 <div class="transmission-def">
                   <div class="tab-content" id="nav-tabContent">
-                    <div class="collapse mb-5 show active" id="t-wA">
+                    <div class="collapse mb-5 show active" id="serial-transmission">
                       <div class="tab-card">
                         <h4 class="card-title">Serial Data Transmission</h4>
                         <p class="card-text">Data is sent one bit at a time over a single channel/wire. Good over longer distances. </p>
                         <a href="#" class="btn btn-danger">Read More</a>
                       </div>
                     </div>
-                    <div class="collapse mb-5" id="t-wB">
+                    <div class="collapse mb-5" id="parallel-transmission">
                       <div class="tab-card">
                         <h4 class="card-title">Parallel Data Transmission</h4>
-                        <p class="card-text">A transmission technique in which multiple bits are transmitted across multiple transmission lines simultaneously. <br>Possible crosstalk: This occurs when a signal from one line gets transferred to another line <br>Possible skew: Each wire in a parallel cable has slightly different properties - they may all travel at difference speeds hence distance needs to be short!
-</p>
+                        <p class="card-text">A transmission technique in which multiple bits(usually one byte) are transmitted across multiple transmission lines including channels and wires simultaneously.<br>
+                          <br>Possible crosstalk: This occurs when a signal from one line gets transferred to another line <br>Possible skew (when bits arrive out of sync): Each wire in a parallel cable has slightly different properties - they may all travel at difference speeds hence distance needs to be short! </p>
                         <a href="#" class="btn btn-danger">Read More</a>
                       </div>
                     </div>
@@ -153,6 +153,50 @@
                 </div>
               </div>
             </div>
+            <br>
+            <div class="card">
+              <div class="card-header">
+                <b>Types of Transmission mode</b>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <h6>There are three modes of transmission: <br></h6>
+                </div>
+                <div class="transmission-tab-btn">
+                  <div class="row-btn-group list-group mb-4" id="list-tab" role="tablist">
+                    <button class="row-btn btn btn-primary d-block list-group-item list-group-item-action active" id="simplex-transmission-btn" href="#simplex-transmission" data-toggle="list">Simplex Transmission</button>
+                    <button class="row-btn btn btn-primary d-block list-group-item list-group-item-action" id="half-duplex-transmission-btn" href="#half-duplex-transmission" data-toggle="list">Half-Duplex Transmission</button>
+                    <button class="row-btn btn btn-primary d-block list-group-item list-group-item-action" id="full-duplex-transmission-btn" href="#full-duplex-transmission" data-toggle="list">Full Duplex Transmission</button>
+                  </div>
+                </div>
+                <div class="transmission-def">
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="collapse mb-5 show active" id="simplex-transmission">
+                      <div class="tab-card">
+                        <h4 class="card-title">Simplex Data Transmission</h4>
+                        <p class="card-text">A data transmission system in which data can only be sent in one direction only. <br><br> (e.g. computer to printer)</p>
+                        <a href="#" class="btn btn-danger">Read More</a>
+                      </div>
+                    </div>
+                    <div class="collapse mb-5" id="half-duplex-transmission">
+                      <div class="tab-card">
+                        <h4 class="card-title">Half-Duplex Data Transmission</h4>
+                        <p class="card-text">a data transmission system in which data can only be sent in both directions but not simultaneously. <br><br> (e.g. Walkie talkies)</p>
+                        <a href="#" class="btn btn-danger">Read More</a>
+                      </div>
+                    </div>
+                    <div class="collapse mb-5" id="full-duplex-transmission">
+                      <div class="tab-card">
+                        <h4 class="card-title">Full Duplex Data Transmission</h4>
+                        <p class="card-text">a data transmission system in which data can only be sent in both directions simultaneously. <br><br> (e.g. Ethernet network)</p>
+                        <a href="#" class="btn btn-danger">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
             <div class="card">
               <div class="card-header">
                 <b>Packet</b>
@@ -160,7 +204,7 @@
               <div class="card-body">
                 <h4 class="card-title">Packet</h4>
                 <p class="card-text">A unit of data that can be sent over a network(LAN or WAN).<br>Each packet includes a source and destination as well as the content (or data) being transferred.</p>
-                <a href="#" class="btn btn-danger">Read More</a>
+                <a href="internet-definitions.html" class="btn btn-danger">Read More</a>
               </div>
             </div>
             <br>
