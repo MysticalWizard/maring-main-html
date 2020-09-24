@@ -75,9 +75,9 @@
         <!-- Example row of columns -->
         <div class="row">
           <div class="col-md-4 greet-card">
-            <h2>Terms & Definitions</h2>
-            <p>Page with a handful of CS terms.</p>
-            <p><a class="btn btn-secondary" href="internet/terms-and-defs.html" role="button">View details »</a></p>
+            <h2>About the Internet</h2>
+            <p>Page about the Internet.</p>
+            <p><a class="btn btn-secondary" href="internet/about-internet.html" role="button">View details »</a></p>
           </div>
           <div class="col-md-4 greet-card yk-app">
             <h2>YK appreciation club</h2>
