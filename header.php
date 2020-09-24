@@ -104,11 +104,14 @@
                   <a class="nav-link" href="Lib.html">Libraries</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Terms and Definitions</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Internet</a>
                   <div class="dropdown-menu">
-                    <a href="internet/terms-and-defs.html" class="dropdown-item">Page 1</a>
-                    <a href="internet/terms-and-defs-2.html" class="dropdown-item">Page 2</a>
-                    <a href="internet/terms-and-defs-3.html" class="dropdown-item">Page 3</a>
+                    <a href="internet/internet-definitions.html" class="dropdown-item">About the Internet</a>
+                    <a href="internet/internet-definitions.html" class="dropdown-item">History of the Internet</a>
+                    <a href="internet/internet-definitions.html" class="dropdown-item">Internet Terms and Definitions</a>
+                    <a href="internet/internet-definitions.html" class="dropdown-item">Data Transmission Terms and Definitions</a>
+                    <a href="internet/internet-definitions.html" class="dropdown-item">Gaining access to the Internet</a>
+                    <a href="internet/internet-definitions.html" class="dropdown-item">How HTTPS works</a>
                   </div>
                 </li>
               </ul>
