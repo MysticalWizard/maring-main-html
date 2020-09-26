@@ -77,7 +77,7 @@
           <div class="col-md-4 greet-card">
             <h2>Experience Tranquility</h2>
             <p>"Embrace Tranquility."</p>
-            <video class="media-element" height="200" loop="" style="margin:0 auto;max-height:240px" width="350" muted=""><source src="https://preview.redd.it/ynnvbk989kly.gif?format=mp4&amp;s=0b931b82dfc3f7f9aad5886a646a8112fc407135"></video>
+            <video autoplay class="media-element" height="200" loop="" style="margin:0 auto;max-height:240px" width="350" muted=""><source src="https://preview.redd.it/ynnvbk989kly.gif?format=mp4&amp;s=0b931b82dfc3f7f9aad5886a646a8112fc407135"></video>
             <p><a class="btn btn-secondary" href="https://takeb1nzyto.space/" role="button">Experience »</a></p>
           </div>
           <div class="col-md-4 greet-card yk-app">
