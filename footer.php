@@ -4,10 +4,10 @@
       <div class="global-footer" id="globalFooter">
         <p class="end-of-page"> --- END OF PAGE --- </p>
         <hr>
-        <div class="footer-ip-widget">
-          <div id="findipwidget"></div>
-          <div class="findiplink" id="findipurl">Powered by <a href="http://www.find-ip.net/" target="_blank">Find-IP.net</a></div>
-        </div>
+        <br>
+        <p>Made by <a href="https://github.com/MMaringGH">MMaringGH</a></p><br>
+        <p>Hosted on <a href="https://github.com/MMaringGH/maring-main-html">GitHub</a> </p>
+        <br>
         <hr>
       </div>
     </div>
