@@ -1,3 +1,6 @@
+/* INTERNET PAGES STYLES */
+/* ver1.6 */
+
 html {
   scroll-behavior: smooth;
 }
@@ -28,16 +31,17 @@ a.nav-anchor {
 .sidebar {
   background: transparent;
   top: 294px;
-  height: %;
+  height: 950vh;
   width: 10%;
   float: left;
   position: relative;
 }
 
 .quick-nav {
-  background: #e7eef1;
+  background: #fff;
   box-sizing: border-box;
   padding: 20px 10px 20px 10px;
+  border-style: solid;
   border-color: #000;
   border-width: 2px;
   border-radius: 2px;
@@ -48,7 +52,6 @@ a.nav-anchor {
   position: sticky;
   -webkit-position: sticky;
   top: 20%;
-  left: 1%;
   width: 200px;
   display: flex;
   z-index: 999;
