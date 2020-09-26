@@ -1,2 +1,3 @@
 # maring-main-html
-//main
+
+Download ZeroTier and then mail to Raynor or Maring for VLAN informations.
