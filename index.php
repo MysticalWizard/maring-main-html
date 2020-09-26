@@ -75,9 +75,10 @@
         <!-- Example row of columns -->
         <div class="row">
           <div class="col-md-4 greet-card">
-            <h2>About the Internet</h2>
-            <p>Page about the Internet.</p>
-            <p><a class="btn btn-secondary" href="internet/about-internet.html" role="button">View details »</a></p>
+            <h2>Experience Tranquility</h2>
+            <p>"Embrace Tranquility."</p>
+            <video class="media-element tErWI93xEKrI2OkozPs7J" height="270" loop="" style="margin:0 auto;max-height:700px" width="480" muted=""><source src="https://preview.redd.it/ynnvbk989kly.gif?format=mp4&amp;s=0b931b82dfc3f7f9aad5886a646a8112fc407135"></video>
+            <p><a class="btn btn-secondary" href="https://takeb1nzyto.space/" role="button">View details »</a></p>
           </div>
           <div class="col-md-4 greet-card yk-app">
             <h2>YK appreciation club</h2>
@@ -126,7 +127,7 @@
         <br>
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">About Internet</h4>
+            <h4 class="card-title">About the Internet</h4>
             <p class="card-text">Page about the internet. Made for school project.</p>
             <a href="internet/about-internet.html" class="btn btn-outline-primary">View details »</a>
           </div>
