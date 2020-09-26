@@ -126,9 +126,9 @@
         <br>
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">JavaScript Clock</h4>
-            <p class="card-text">Analog clock using JavaScript.</p>
-            <a href="jsClockDark.html" class="btn btn-outline-primary">See</a>
+            <h4 class="card-title">About Internet</h4>
+            <p class="card-text">Page about the internet. Made for school project.</p>
+            <a href="internet/about-internet.html" class="btn btn-outline-primary">View details »</a>
           </div>
         </div>
         <br>
