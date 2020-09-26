@@ -4,10 +4,8 @@
       <div class="global-footer" id="globalFooter">
         <p class="end-of-page"> --- END OF PAGE --- </p>
         <hr>
-        <br>
-        <p>Made by <a href="https://github.com/MMaringGH">MMaringGH</a></p><br>
-        <p>Hosted on <a href="https://github.com/MMaringGH/maring-main-html">GitHub</a> </p>
-        <br>
+        <p style="text-align:center;">Made by <a href="https://github.com/MMaringGH">MMaringGH</a>
+        <br>Hosted on <a href="https://github.com/MMaringGH/maring-main-html">GitHub</a> </p>
         <hr>
       </div>
     </div>
