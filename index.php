@@ -81,7 +81,7 @@
             <p><a class="btn btn-secondary" href="https://takeb1nzyto.space/" role="button">Experience »</a></p>
           </div>
           <div class="col-md-4 greet-card yk-app">
-            <h2>YK appreciation club</h2>
+            <h2>YK Appreciation club</h2>
             <a href="https://www.google.com/search?q=what+is+the+meaning+of+life%3F" target="_blank">
               <p>YK is God</p>
             </a>
