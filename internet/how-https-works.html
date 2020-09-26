@@ -152,14 +152,23 @@
           <div class="card">
             <div class="card-body">
               <h4>How does HTTPS work?</h4>
-              <p>HTTP is 'plain text', or a binary file (like an image) anyone can read or see.
-                <br>HTTPS is based on public/private-key cryptography. There is a key pair:
-                <br>&minus; The public key is used for encryption
-                <br>&minus; The secret private key is required for decryption.
-                <br>A certificate is a public key with a label identifying the owner.</p>
+              <p>A certificate is a public key with a label identifying the owner.</p>
               <p>A certificate authority (CA) is a third-party organization with 3 main objectives:
                 <br>&minus; Issuing certificates <br>&minus; Confirming the identity of the certificate owner <br>&minus; Providing proof that the certificate is valid
               </p>
+              <h6>How do certificates get validated</h6>
+              <p>When a CA issues a certificate, they sign the certificate with their root certificate pre-installed in the root store. Most of the time it's an intermediate certificate signed with a root certificate.</p>
+              <p>The process is based on a 'chain of trust'.</p>
+              <p>&minus; Your browser connects to a site via HTTPS and downloads the certificate.
+                <br>&minus; The certificate is not a root certificate.
+                <br>&minus; Your browser downloads the certificate that was used to sign the certificate on the site.
+                <br>&minus; But this certificate is still not the root certificate
+                <br>&minus; Your browser once more looks up the certificate that signed the intermediate certificate
+                <br>&minus; It's the root certificate! Yay!
+                <br>&minus; The entire certificate chain is trusted, and thus the site certificate is trusted as well.
+              <p>In the event that the last certificate is not a root certificate, and there are no more certificates to download, the chain is untrusted.</p>
+              </p>
+              <p>All valid certificates result in the browser displaying a secure badge in the browser bar. EV certificates generally display the company name as well.</p>
               <p>When that exchange of data is encrypted with SSL/TLS, then we call it HTTPS.</p>
             </div>
           </div>
